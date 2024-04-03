@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: idroid;
+    src: url("assets/fonts/idroid.otf") format("opentype");
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", cursive;
+    --font-android: "idroid", curive;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #84e1ad;
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3));
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+}
+
+h1#header-title {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style: none;
+    padding-left: 1rem;
+    padding-bottom: .5rem;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-left: 6px;
+}
+
+main {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+}
+
+main h1,
+main h2 {
+    font-family: idroid;
+    color: #1a5c38
+}
+
+
+p {
+    text-align: justify;
+    font-size: large;
+    margin: 10px 0px 10px 0px;
+}
+
+
+h2.main-h2 {
+    background-color: #84e1ad;
+    display: inline;
+}
+
+h3#header-subtitle {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+#container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    font-size: 1em;
+    line-height: 1.6em;
+    padding-bottom: 1rem;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+section.video {
+    background-color: #1a5c38;
+    margin: 1rem -1rem;
+    padding: 2rem 4rem;
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section.learn-more {
+    background-color: #84e1ad;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+}
+
+.learn-more-title {
+    color: white;
+    background-color: #1a5c38;
+    border-radius: 10px 10px 0px 0px;
+    padding: 1rem;
+}
+
+.two-column-list {
+    list-style: "✓ ";
+    list-style-position: inside;
+    columns: 2;
+}
+
+.learn-more-p {
+    padding: 0rem 1rem;
+}
+
+footer {
+    background-color: #1a5c38;
+    margin-top: 1rem;
+    padding: .5rem;
+}
+
+.footer-p {
+    color: white;
+    text-align: center;
+}
